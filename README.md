@@ -4,6 +4,8 @@ My office has two (single-person) bathrooms and more than two employees. At a me
 
 I immeadiately recognized this as an opportunity for some microcontroller action (and some AWS action). I thought it'd be nice to integrate a slash command in our slack channel `/bathroom` and receive the current status of our east/west bathrooms. Because the data lives in DynamoDB, it will be effortless to build other apps to show bathroom status.
 
+_I will write complete instructions for the lambda functions and arduino project and update this repo._
+
 ### Things you'll need:
 
 * [The esp8266 microcontroller](https://www.amazon.com/HiLetgo-Internet-Development-Wireless-Micropython/dp/B010O1G1ES)—which was < $10 at time of writing
@@ -15,4 +17,3 @@ I immeadiately recognized this as an opportunity for some microcontroller action
 * This article <3
 
 Bookmark this page, get your stuff, and come back when you're ready!
-

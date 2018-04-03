@@ -23,7 +23,7 @@
 const char *ssid = "YOUR_WIFI_NAME";
 const char *password = "YOUR_WIFI_PASSWORD";
 
-const char *host = "j3gdcj7yv2.execute-api.us-east-1.amazonaws.com";
+const char *host = "YOUR_LAMBDA_FUNCTION_URL.execute-api.us-east-2.amazonaws.com";
 const int httpsPort = 443;
 
 // Use web browser to view and copy

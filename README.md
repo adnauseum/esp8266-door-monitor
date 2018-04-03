@@ -2,9 +2,11 @@
 
 My office has two (single-person) bathrooms and more than two employees. At a meeting it was mentioned that it'd be nice to have some sort of way of knowing the occupancy of the bathroom _before_ making the long walk down the hallway or, worse, making the trip to the other side of the office.
 
-I immeadiately recognized this as an opportunity for some microcontroller action (and some AWS action). I thought it'd be nice to integrate a slash command in our slack channel `/bathroom` and receive the current status of our east/west bathrooms. Because the data lives in DynamoDB, it will be effortless to build other apps to show bathroom status.
+I immed recognized this as an opportunity for some microcontroller action (and some AWS action). I thought it'd be nice to integrate a slash command in our slack channel `/bathroom` and receive the current status of our east/west bathrooms. Because the data lives in DynamoDB, it will be effortless to build other apps to show bathroom status.
 
 _I will write complete instructions for the lambda functions and arduino project and update this repo._
+
+Also of note, the entire project is oriented around the lambda functions which the arduino will hit to update the bathroom status (when the reed switch is closed) and the lambda functions that handle the slash POST request coming from Slack.
 
 ### Things you'll need:
 

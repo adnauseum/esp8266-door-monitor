@@ -2,9 +2,7 @@
 
 const AWS = require("aws-sdk");
 const dynamoDB = new AWS.DynamoDB.DocumentClient();
-const TableName = process.env.YOUR_DYNAMODB_TABLE_NAME;
-
-// NOTE: I set up no error handling here. That's what happens when you make things on your lunch break
+const TableName = process.env.BATHROOM_STATUS_TABLE;
 
 module.exports.updateBathroomStatus = (event, context, callback) => {
   const { queryStringParameters } = event;
@@ -12,7 +10,7 @@ module.exports.updateBathroomStatus = (event, context, callback) => {
   let response = {
     statusCode: 200,
     headers: {
-      "Access-Control-Allow-Origin": "*" // needed for CORS business
+      "Access-Control-Allow-Origin": "*"
     }
   };
   const params = {
@@ -50,10 +48,12 @@ module.exports.readBathroomStatus = (event, context, callback) => {
     if (event.headers["User-Agent"].includes("Slackbot")) {
       // custom response for Slack integration
       const west = result.Items[0];
+      const east = result.Items[1];
       response.body = `${west.bathroomId} is ${west.status} ${
         west.status === "open" ? ":gottarun:" : ":no_entry_sign:"
+      } \n ${east.bathroomId} is ${east.status} ${
+        east.status === "open" ? ":gottarun:" : ":no_entry_sign:"
       }`;
-      // include all your doors in this above logic
       callback(null, response);
     }
   });

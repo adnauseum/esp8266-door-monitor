@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/24446573/38755343-066b317c-3f2b-11e8-95bd-e9a4d21eae74.png)
+
 # Project desciption
 
 My office has two (single-person) bathrooms and more than two employees. At a meeting it was mentioned that it'd be nice to have some sort of way of knowing the occupancy of the bathroom _before_ making the long walk down the hallway or, worse, making the trip to the other side of the office.

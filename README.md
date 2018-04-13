@@ -1,11 +1,8 @@
-<div style="text-align:center">
 ![iot](https://user-images.githubusercontent.com/24446573/38755889-12d8e5ce-3f2d-11e8-80d1-e7564c9e5053.gif)
-</div>
 
 ![20180413_083840](https://user-images.githubusercontent.com/24446573/38755601-fd019706-3f2b-11e8-813a-4ffb2463ef21.jpg)
-<div style="text-align:center">
+
 ![screen shot 2018-04-13 at 2 55 46 pm](https://user-images.githubusercontent.com/24446573/38755385-271444ae-3f2b-11e8-8d76-25fbc3df13a7.png)
-</div>
 
 # Project desciption
 
